@@ -2,9 +2,9 @@
 
 #include <iostream>
 
-char Human::makeMove() {
-  char move;
-  std::cout << "Enter move: ";
-  std::cin >> move;
-  return move;
+char Human::makeMove()
+{
+    char move;
+    std::cin >> move;
+    return move;
 }
