@@ -12,33 +12,32 @@ char Referee::refGame(Human player1, Computer player2)
         std::cout << 'T';
         return 'T';
     }
-    else if (p1Move == 'R' || p2Move == 'P')
+    else if (p1Move == 'R' && p2Move == 'P')
     {
         std::cout << 'L';
         return 'L';
     }
-
-    else if (p1Move == 'P' || p2Move == 'R')
+    else if (p1Move == 'P' && p2Move == 'R')
     {
         std::cout << 'W';
         return 'W';
     }
-    else if (p1Move == 'S' || p2Move == 'P')
+    else if (p1Move == 'S' && p2Move == 'P')
     {
         std::cout << 'W';
         return 'W';
     }
-    else if (p1Move == 'P' || p2Move == 'S')
+    else if (p1Move == 'P' && p2Move == 'S')
     {
         std::cout << 'L';
         return 'L';
     }
-    else if (p1Move == 'S' || p2Move == 'R')
+    else if (p1Move == 'S' && p2Move == 'R')
     {
         std::cout << 'L';
         return 'L';
     }
-    else if (p1Move == 'R' || p2Move == 'S')
+    else if (p1Move == 'R' && p2Move == 'S')
     {
         std::cout << 'W';
         return 'W';
