@@ -2,14 +2,13 @@
 #include <string>
 #include <vector>
 
-#include "Computer.h"
-#include "Human.h"
-#include "Referee.h"
+#include "Crescendo.h"
 
-int main() {
-  Computer p2;
-  Human p1;
-  Referee r;
-  r.refGame(p1, p2);
-  return 0;
+int main()
+{
+  Crescendo c;
+  for (int i = 0; i < 5; i++)
+  {
+    std::cout << c.makeMove() << std::endl;
+  }
 }

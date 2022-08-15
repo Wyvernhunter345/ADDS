@@ -1,9 +1,7 @@
 #include "Referee.h"
 #include <iostream>
-#include "Computer.h"
-#include "Human.h"
 
-char Referee::refGame(Human player1, Computer player2)
+/* char Referee::refGame(Human player1, Computer player2)
 {
     char p1Move = player1.makeMove();
     char p2Move = player2.makeMove();
@@ -45,3 +43,4 @@ char Referee::refGame(Human player1, Computer player2)
 
     return 'T';
 }
+ */
