@@ -1,0 +1,5 @@
+make --dry-run --keep-going --print-directory
+make: Entering directory '/home/jaiden/Git/ADDS'
+g++ -o main main.cpp Library.cpp Document.cpp Book.cpp -Wall
+make: Leaving directory '/home/jaiden/Git/ADDS'
+ 

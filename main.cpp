@@ -1,15 +1,29 @@
-#include <iostream>
+#include "Library.h"
+#include "Document.h"
+#include "Book.h"
 #include <string>
 #include <vector>
+#include <iostream>
 
-#include "Computer.h"
-#include "Human.h"
-#include "Referee.h"
+void checkDoc(Library *l, Document *d)
+{
+    if (l->hasDocument(d))
+    {
+        std::cout << "Document is in library" << std::endl;
+    }
+    else
+    {
+        std::cout << "Document is not in library" << std::endl;
+    }
+}
 
-int main() {
-  Computer p2;
-  Human p1;
-  Referee r;
-  r.refGame(p1, p2);
-  return 0;
+int main()
+{
+    Library library;
+    Book book;
+    Book book2;
+    library.addDocument(&book);
+    checkDoc(&library, &book);
+    checkDoc(&library, &book2);
+    return 0;
 }
