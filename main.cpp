@@ -17,7 +17,7 @@ int main()
 
     vector<int> v2 = mapTr.map(v);
 
-    for (int i = 0; i < v2.size(); i++)
+    for (long unsigned int i = 0; i < v2.size(); i++)
     {
         cout << v2[i] << ", ";
     }
