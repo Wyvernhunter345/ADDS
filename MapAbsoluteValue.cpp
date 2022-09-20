@@ -1,4 +1,4 @@
-#include "MapAbsolute.h"
+#include "MapAbsoluteValue.h"
 #include <cmath>
 
 MapAbsolute::MapAbsolute()
